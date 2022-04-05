@@ -7,6 +7,7 @@ This repo is documenting my artistic research practice for my masters thesis in 
 ![](./media/TuneF-redrawPatentdraw.jpg)
 Et *Tonestrømsapparat* består af en stemmegaffel monteret med en spændeskrue ved dets base. Modsat stemmegaflens grene er placeret en elektromagnet med form som en hestesko. Ved indersiden af en af stemmegaffel-grenene er placeret en kontakt i let berøring.
 ![](./media/TuneF_patentRedraw.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/8/82/Mode_Shape_of_a_Tuning_Fork_at_Eigenfrequency_440.09_Hz.gif)
 ### Generering af en Tonestrøm
 ![](./media/LaCourTonestrømme.png)
 Det Poul la Cour kalder en *tonestrøm* kan i vore dage anses for et audio/analog signal.
@@ -23,6 +24,7 @@ Denne Cyklus hastighed er determineret af den pågældende stemmegaffels naturli
 
 Frekvens(Hz), hvor mange gange i sekundet stemmegaffelgrenene går mellem naturlig og udspilet position. 
 
+![](https://www.math.hkust.edu.hk/~machiang/1013/Notes/cosine_2.gif)
 1 Hz = 1 cyklus pr. sekund
 ![](./media/hz.jpg)
 
