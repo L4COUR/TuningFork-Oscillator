@@ -61,6 +61,7 @@ I det originale tonestrømsapparat er der anvendt en hesteskoesmagnet, hvoraf je
 
 ### Udfordringer: Kontakt & unipolar vs. bipolar
 ![](./media/TuneF_clamp.jpg)
+![](./media/TuneF_selfoscillation_v2.jpg)
 Den første udfordring var at vælge den korrekte form for kontakt. **Graden af stivhed** er vigtig, hvis den er for elastisk giver metallet for meget efter og kommer ud af facon, hvis det er for stift er der ingen vibration mulig. Jeg forsøgte mig med stiv-solidcore ledning, småstykker af "springsteel" af varierende stivhed og bredde, indtil jeg fandt at tøj-sy-nåle havde den bedste stivhed.
  **Bredden på kontakten**, hvis kontakt-fladen er for bred da har gaflen svært ved at bevare vibrationer.Jeg forsøgte mig med stiv-solidcore ledning, småstykker af "springsteel" af varierende stivhed og bredde, indtil jeg fandt at tøj-sy-nåle havde den bedste stivhed og smalle kontaktflade.
 
@@ -76,9 +77,18 @@ Poul la Cour nævner da også i patentet at det er en fordel at anvende en anden
 
 ![](./media/TuneF_Belainduced440_receiver_draw.jpg)
 
+![](./media/TuneF_unipolar_test.jpg)
+![](./media/LEDcircuit.jpg)
+
+- Når kontakten røre let ved stemmegaffelgrenen da slukkes LED'en.
+- afhængig af hvor hårdt jeg presser kontakten mod stemmegaflen vil jeg få skarpe eller sløve blink fra LED'en.
+
 #### Bipolar Bølger
 Poul la Cour nævner at man for at kunne opnå bipolare tonestrømme kan tilføje en tredje kontakt der altså i modsætning til den anden kontakt der sidder på indersiden i let berøring med gaffelgrenen, andbringes på ydersiden uden at røre gaffelgrenen.
 
 > *"Man kan saaledes, ved i disse to Broer at indskyde 2 batterier, af hvilke det ene sender en positiv Strøm fra Contact til Gaffel, det andet en negativ fra Contact til Gaffel, lade Gaflen og den derefter følgende Ledning gjennemløbe af en Tonestrøm, hvis Halvbølger have skiftende strømretning" - Poul la Cour 1878*
 
 ![](./media/TuneF_uniBiPolar.jpg)
+
+![](./media/TuneF-Contact.jpg)
+Når en kontakt skal påsættes stemmegaflen er den største udfordring altid at finde ud af hvordan denne monteres. I tilfældet med at lave en dobbelt kontakt til bipolar bølger er det vigtigt at kontakterne sidder med en kort afstand fra hinanden (stemmegaffelgrens bredde) uden at de på nogen måde er i ledende forbindelse med hinanden.
