@@ -92,3 +92,31 @@ Poul la Cour nævner at man for at kunne opnå bipolare tonestrømme kan tilføj
 
 ![](./media/TuneF-Contact.jpg)
 Når en kontakt skal påsættes stemmegaflen er den største udfordring altid at finde ud af hvordan denne monteres. I tilfældet med at lave en dobbelt kontakt til bipolar bølger er det vigtigt at kontakterne sidder med en kort afstand fra hinanden (stemmegaffelgrens bredde) uden at de på nogen måde er i ledende forbindelse med hinanden.
+
+### Konstruktion af Dobbelt-kontakt
+
+![](./media/tuneF_toneapparat.jpg)
+
+for at kunne imødegå Poul la Cours tonestrøms-apparat og dets iboende egenskab til at kunne skabe bipolare bølger, anså jeg det som nødvendigt at konstruere en dobbelt kontakt der både ville kunne anvendes til unipolar og bipolar bølger.
+
+![](./media/tuneF_dKontakt_2.jpg
+)
+
+De to parametre der i denne konstruktion er altafgørende er for det første placeringen af de to kontakter. Afstanden mellem de to kontakter skal være næsten lig stemmegaffelgrenens-bredde med få millimeter ekstra for at kontakten vil have den ønskede virkning. For det andet må de to kontakter nødvendigvis være isoleret fra hinanden og stativet det holder dem.
+
+![](./media/tuneF_dKontakt_3.jpg
+)
+
+Hvoraf det første parameter med afstanden var et spørgsmål om at anvende møtrikker og diske til at justere afstanden mellem de to kontakter, var det andet parameter med kontakternes isolerethed et større problem. I min proces havde jeg først forsøgt med at anvende "heatshrink-tubing" omking den del af kontakten der skulle holdes, idet gummi ikke er strømledende. 
+
+Men idet kontakternes skal spændes ret hårdt fast flækkes gummiet og kontakten står således i elektrisk forbindelse til stativet og den anden kontakt. Dette kan determineres ved at anvende et multimeter med "continuity" setting, der afgiver en beep hvis der er forbindelse. For at min opstilling skal virke er det afgørende at kontakterne er isoleret fra hinanden.
+
+![](./media/tuneF_dKontakt_1.jpg
+)
+
+For at isolere de to kontakter har jeg overvejet at anvende silikone-spray og spraye delene på stativet for således at fratage dem der egenskab til at lede strøm. 
+
+
+
+
+
