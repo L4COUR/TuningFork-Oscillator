@@ -114,7 +114,7 @@ Men idet kontakternes skal spændes ret hårdt fast flækkes gummiet og kontakte
 ![](./media/tuneF_dKontakt_1.jpg
 )
 
-For at isolere de to kontakter har jeg overvejet at anvende silikone-spray og spraye delene på stativet for således at fratage dem der egenskab til at lede strøm. 
+For at isolere de to kontakter har jeg overvejet at anvende silikone-spray og spraye delene på stativet for således at fratage dem der egenskab til at lede strøm. En anden løsning kunne være at anvende elektrisk tape istedet for gummi og se om det holder bedre når det spændes fast.
 
 
 
