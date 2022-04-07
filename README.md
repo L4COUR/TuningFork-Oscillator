@@ -13,7 +13,7 @@ Et *Tonestrømsapparat* består af en stemmegaffel monteret med en spændeskrue 
 Det Poul la Cour kalder en *tonestrøm* kan i vore dage anses for et audio/analog signal.
 
 Stemmegaflens base er forbundet til GND, den ene af elektromagnetens pins er forbundet til V++, og den anden af elektromagnetens pins er forbundet til en kontakt sat i let berøring ved indersiden af en stemmegaffel-gren.
-
+ 
 Følgende er beskrevet hvordan en tonestrøm skabes af et tonestrøms-apparat.
 
 1. Stemmegaflen er i dets naturlige position hvor det ved at berøre kontakten lukker et kredsløb med dets elektromagnet
@@ -22,7 +22,7 @@ Følgende er beskrevet hvordan en tonestrøm skabes af et tonestrøms-apparat.
 
 Denne Cyklus hastighed er determineret af den pågældende stemmegaffels naturlige frekvens
 
-Frekvens(Hz), hvor mange gange i sekundet stemmegaffelgrenene går mellem naturlig og udspilet position.
+Frekvens(Hz), hvor mange gange i sekundet stemmegaffelgrenene går mellem naturlig og udspilet position. 
 
 ![](https://www.math.hkust.edu.hk/~machiang/1013/Notes/cosine_2.gif)
 1 Hz = 1 cyklus pr. sekund
@@ -134,7 +134,7 @@ med en 12V AC strømforsyning fra et Doepfer A-100 DIY kit kunne jeg således p�
 
 Den positive og negative kontakt er forbundet til hver deres simple LED kredsløb på et breadboard, hvorfra jeg således kunne konstaterer at hvis den positive kontakt berøre stemmegaflens yderside, da vil den venstre LED lys og den højre LED være slukket, og modsat hvis den negative kontakt berøre stemmegaflens inderside.
 
-imidlertid finder jeg dog også at jeg kan få begge LED'er til at lyse samtidigt hvis jeg placerer de to kontakter i samme afstand fra stemmegaflen. Dette er potentielt problematisk idet de to LED'er helst skal stå i et modsat forhold til hinanden.
+imidlertid finder jeg dog også at jeg kan få begge LED'er til at lyse samtidigt hvis jeg placerer de to kontakter i samme afstand fra stemmegaflen. Dette er potentielt problematisk idet de to LED'er helst skal stå i et modsat forhold til hinanden. 
 
 I Poul la Cours tonestrøms-apparat kan man se hvordan han har anvendt små fjedre til sørge for dette modsætningsforhold. I min version valgte jeg at anvende en jernklemme hvorom der er viklet elektrisk-tape for at jernet ikke skal danne en kontakt mellem de to kontakter.
 
@@ -142,9 +142,24 @@ I Poul la Cours tonestrøms-apparat kan man se hvordan han har anvendt små fjed
 ![](./media/TuneF_betafield_test.jpg)
 I denne test anvendte jeg en hjemmebygget betafield mikrofon til at opfange strømmen fra LED'ernes intermitterende blink og omforme dem til et audiosignal der kunne optages og analyseres i Ableton Live.
 ![](./media/TuneF_betafield_test_waveform.jpg)
-Med dette setup afviklede jeg tre på hinanden følgende optagelser. Først optog jeg kun blink fra det positive signal, så optog jeg kun blink fra det negative signal, og endelig optog jeg begge signaler samtidigt.
+Med dette setup afviklede jeg tre på hinanden følgende optagelser. Først optog jeg kun blink fra det positive signal, så optog jeg kun blink fra det negative signal, og endelig optog jeg begge signaler samtidigt. 
 
 Efter at have lavet optagelserne kunne jeg ved at anvende det lavfrekvente brummende signal fra min hjemmebyggede betafield mikron til at synkroniserer de tre optagelser. umiddelbart var der ikke nogen hørbar eller grafisk visuel forskel på de tre signaler, dog fandt jeg at hvis jeg afspillede de positive og negative signaler samtidig pannet dem i hhv left og right channel, og nedsatte deres afspilningshastighed med -55 semitones at man kunne høre hvordan de to signaler stod i et modsætningsforhold til hinanden, ligesom LED'ernes blink og Kontakternes berøring med stemmegaffelgrenen.
 ![](./media/PositivNegativBetafield.png)
-
 [Listen](https://github.com/L4COUR/TuningFork-Oscillator/raw/main/media/Tonestromme.mp3)
+
+I forhold til de tonestrømme Poul la Cour beskriver i patentet, da kan de bølgeformer jeg har udtrukket ikke siges at vise noget tilsvarende. De firkant bølger der ses i fig. 2. b er intet sted at finde på mine bølger der istedet mere ligner en serie af clicks der sker hurtigt efter hinanden. Derudover havde jeg regnet med at se den positive og den negative bølger være unipolare, men de bølgeformer jeg ser er bipolare. Dette skyldes at jeg anvendte min hjemmebyggede betafield mikrofon der vha. et 100nH inductor komponent opfanger de to LED'er inductor komponentet sender det opfangede elektriske signal via et mono 3.5mm jack ind i mit lydkort, og tager således ikke højde for det positive eller negative polaritet af det elektriske signal. 
+![](./media/LaCourTonestrømme.png)
+For at kunne tilnærme mig et tilsvarende signal til det Poul la Cour illustrerer på Fig. 2,a,b,c i mit videre arbejde, må jeg erstatte mit simple LED kredsløb med en op-amp IC-chip.
+
+#### Elektromagnetens signal
+Idet man lyttede til LED'ernes blink krævede det at signalet blev forstærket gennem en pre-amp. Dette er dog ikke tilfældet hvis man ønsker at lytte til Elektromagneten, denne kan uden at blive forstærket fint høres gennem min hjemmebyggede betafield mikrofon.
+
+![](./media/elektromagnet_betasig.png)
+![](./media/elektromagnet_betasig_v2.png)
+![](./media/elektromagnet_betasig_v3.png)
+
+Idet elektromagneten tændes og slukkes med 440 Hz, høres denne som en tone. Tonens pitch starter lavt inden den finder sin rette svingning og holder så en nogenlunde konstant 440 Hz tone, med få pitch udsving. De samme udsving der høres af det elektromagnetisk omsatte audiosignal er de samme hastighedssvingninger der kan høres akustisk i rummet.
+
+Signalet fra elektromagneten er klart et puls signal og kan siges at have samme karakter som signalet afbilledet Fig. 2,a. For at kunne gøre dette signal mere brugbart med en mikrokontroller og arbejde med princippet om stemmegaflen som en form for clock lig en quartz crystal kunne man her arbejde med at sende signalet gennem en 555 IC-chip for at lave den signal til en fuldstændig uniolar firkant der kan sendes til en digital I/O port.
+
