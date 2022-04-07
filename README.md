@@ -146,14 +146,5 @@ Med dette setup afviklede jeg tre på hinanden følgende optagelser. Først opto
 
 Efter at have lavet optagelserne kunne jeg ved at anvende det lavfrekvente brummende signal fra min hjemmebyggede betafield mikron til at synkroniserer de tre optagelser. umiddelbart var der ikke nogen hørbar eller grafisk visuel forskel på de tre signaler, dog fandt jeg at hvis jeg afspillede de positive og negative signaler samtidig pannet dem i hhv left og right channel, og nedsatte deres afspilningshastighed med -55 semitones at man kunne høre hvordan de to signaler stod i et modsætningsforhold til hinanden, ligesom LED'ernes blink og Kontakternes berøring med stemmegaffelgrenen.
 ![](./media/PositivNegativBetafield.png)
-<<<<<<< HEAD
+
 [Listen](https://github.com/L4COUR/TuningFork-Oscillator/raw/main/media/Tonestromme.mp3)
-=======
-
-
- <audio id="audio" preload="auto" volume="0.5" data-loop-track="false" data-change-page-title="false"> 
- <source src="https://archive.org/download/samples2003-11-21.flac16/samples2003-11-21d2t04.mp3" /> 
-  
- 
- </audio> 
->>>>>>> 64cff37661fbc36e6967d08216951b372572eab4
