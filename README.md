@@ -140,7 +140,14 @@ I Poul la Cours tonestrøms-apparat kan man se hvordan han har anvendt små fjed
 
 #### Betafield Mikrofon optagelser
 ![](./media/TuneF_betafield_test.jpg)
-I denne test anvendte jeg en hjemmebygget betafield mikrofon til at opfange strømmen fra LED'ernes intermitterende blink og omforme dem til et audiosignal der kunne optages og analyseres i Ableton Live. 
+I denne test anvendte jeg en hjemmebygget betafield mikrofon til at opfange strømmen fra LED'ernes intermitterende blink og omforme dem til et audiosignal der kunne optages og analyseres i Ableton Live.
+![](./media/TuneF_betafield_test_waveform.jpg)
+Med dette setup afviklede jeg tre på hinanden følgende optagelser. Først optog jeg kun blink fra det positive signal, så optog jeg kun blink fra det negative signal, og endelig optog jeg begge signaler samtidigt. 
+
+Efter at have lavet optagelserne kunne jeg ved at anvende det lavfrekvente brummende signal fra min hjemmebyggede betafield mikron til at synkroniserer de tre optagelser. umiddelbart var der ikke nogen hørbar eller grafisk visuel forskel på de tre signaler, dog fandt jeg at hvis jeg afspillede de positive og negative signaler samtidig pannet dem i hhv left og right channel, og nedsatte deres afspilningshastighed med -55 semitones at man kunne høre hvordan de to signaler stod i et modsætningsforhold til hinanden, ligesom LED'ernes blink og Kontakternes berøring med stemmegaffelgrenen.
+![](./media/PositivNegativBetafield.png)
+
+
 
 
 
