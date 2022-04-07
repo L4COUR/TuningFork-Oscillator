@@ -158,6 +158,7 @@ Idet man lyttede til LED'ernes blink krævede det at signalet blev forstærket g
 ![](./media/elektromagnet_betasig.png)
 ![](./media/elektromagnet_betasig_v2.png)
 ![](./media/elektromagnet_betasig_v3.png)
+[Listen](https://github.com/L4COUR/TuningFork-Oscillator/raw/main/media/elektromagnet_betaSig.mp3)
 
 Idet elektromagneten tændes og slukkes med 440 Hz, høres denne som en tone. Tonens pitch starter lavt inden den finder sin rette svingning og holder så en nogenlunde konstant 440 Hz tone, med få pitch udsving. De samme udsving der høres af det elektromagnetisk omsatte audiosignal er de samme hastighedssvingninger der kan høres akustisk i rummet.
 
