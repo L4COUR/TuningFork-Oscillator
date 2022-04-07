@@ -107,7 +107,9 @@ De to parametre der i denne konstruktion er altafgørende er for det første pla
 ![](./media/tuneF_dKontakt_3.jpg
 )
 
-Hvoraf det første parameter med afstanden var et spørgsmål om at anvende møtrikker og diske til at justere afstanden mellem de to kontakter, var det andet parameter med kontakternes isolerethed et større problem. I min proces havde jeg først forsøgt med at anvende "heatshrink-tubing" omking den del af kontakten der skulle holdes, idet gummi ikke er strømledende. 
+Hvoraf det første parameter med afstanden var et spørgsmål om at anvende møtrikker og diske til at justere afstanden mellem de to kontakter, var det andet parameter med kontakternes isolerethed et større problem. I min proces havde jeg først forsøgt med at anvende "heatshrink-tubing" omking den del af kontakten der skulle holdes, idet gummi ikke er strømledende.
+
+![](./media/tuneF_dobK_fail.jpg)
 
 Men idet kontakternes skal spændes ret hårdt fast flækkes gummiet og kontakten står således i elektrisk forbindelse til stativet og den anden kontakt. Dette kan determineres ved at anvende et multimeter med "continuity" setting, der afgiver en beep hvis der er forbindelse. For at min opstilling skal virke er det afgørende at kontakterne er isoleret fra hinanden.
 
@@ -115,6 +117,34 @@ Men idet kontakternes skal spændes ret hårdt fast flækkes gummiet og kontakte
 )
 
 For at isolere de to kontakter har jeg overvejet at anvende silikone-spray og spraye delene på stativet for således at fratage dem der egenskab til at lede strøm. En anden løsning kunne være at anvende elektrisk tape istedet for gummi og se om det holder bedre når det spændes fast.
+
+#### Isolation af dobbeltkontakt
+![](./media/TuneF_isolatedDobbkon.jpg)
+istedet for at anvende silikone-spray valgte jeg at anvende elektrisk-isoleringstape samt bruge plastik-diske istedet for metal diske til at holde de knappenåle jeg anvender som kontakter. Efter at have testet for continuity med mit multimeter kunne jeg konstaterer at de to kontakter nu var uafhængige af hinanden og dermed stativet.
+![](./media/TuneF_isolatedDobbkon_v2.jpg)
+
+### Tonestrøms signaler
+Idet jeg nu har en stemmegaffel der kan bringes i svingninger af en elektromagnet med en kontakt der således fungerer som en selvafbryder på den ene af stemmegaflens grene, og jeg på den anden nu har en fungerende dobbeltkontakt, kan jeg nu test begynde at udtrække signaler fra tonestrøms-apparattet.
+
+![](./media/tuneF_isolatedDobbkon_ac_v2.jpg)
+
+med en 12V AC strømforsyning fra et Doepfer A-100 DIY kit kunne jeg således påfører en positiv(blå) og en negativ(hvid) spænding på dobbeltkontakten. Samt forbinde GND(Gul) til stemmegaflen fra AC strømforsyningen.
+
+![](./media/TuneF_ac_LED_test.jpg)
+
+Den positive og negative kontakt er forbundet til hver deres simple LED kredsløb på et breadboard, hvorfra jeg således kunne konstaterer at hvis den positive kontakt berøre stemmegaflens yderside, da vil den venstre LED lys og den højre LED være slukket, og modsat hvis den negative kontakt berøre stemmegaflens inderside.
+
+imidlertid finder jeg dog også at jeg kan få begge LED'er til at lyse samtidigt hvis jeg placerer de to kontakter i samme afstand fra stemmegaflen. Dette er potentielt problematisk idet de to LED'er helst skal stå i et modsat forhold til hinanden. 
+
+I Poul la Cours tonestrøms-apparat kan man se hvordan han har anvendt små fjedre til sørge for dette modsætningsforhold. I min version valgte jeg at anvende en jernklemme hvorom der er viklet elektrisk-tape for at jernet ikke skal danne en kontakt mellem de to kontakter.
+
+#### Betafield Mikrofon optagelser
+![](./media/TuneF_betafield_test.jpg)
+I denne test anvendte jeg en hjemmebygget betafield mikrofon til at opfange strømmen fra LED'ernes intermitterende blink og omforme dem til et audiosignal der kunne optages og analyseres i Ableton Live. 
+
+
+
+
 
 
 
