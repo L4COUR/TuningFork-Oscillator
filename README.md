@@ -138,7 +138,7 @@ imidlertid finder jeg dog også at jeg kan få begge LED'er til at lyse samtidig
 
 I Poul la Cours tonestrøms-apparat kan man se hvordan han har anvendt små fjedre til sørge for dette modsætningsforhold. I min version valgte jeg at anvende en jernklemme hvorom der er viklet elektrisk-tape for at jernet ikke skal danne en kontakt mellem de to kontakter.
 
-#### Betafield Mikrofon optagelser
+#### Sonic Archaeology Method
 ![](./media/TuneF_betafield_test.jpg)
 I denne test anvendte jeg en hjemmebygget betafield mikrofon til at opfange strømmen fra LED'ernes intermitterende blink og omforme dem til et audiosignal der kunne optages og analyseres i Ableton Live.
 ![](./media/TuneF_betafield_test_waveform.jpg)
@@ -146,14 +146,20 @@ Med dette setup afviklede jeg tre på hinanden følgende optagelser. Først opto
 
 Efter at have lavet optagelserne kunne jeg ved at anvende det lavfrekvente brummende signal fra min hjemmebyggede betafield mikron til at synkroniserer de tre optagelser. umiddelbart var der ikke nogen hørbar eller grafisk visuel forskel på de tre signaler, dog fandt jeg at hvis jeg afspillede de positive og negative signaler samtidig pannet dem i hhv left og right channel, og nedsatte deres afspilningshastighed med -55 semitones at man kunne høre hvordan de to signaler stod i et modsætningsforhold til hinanden, ligesom LED'ernes blink og Kontakternes berøring med stemmegaffelgrenen.
 ![](./media/PositivNegativBetafield.png)
-<<<<<<< HEAD
 [Listen](https://github.com/L4COUR/TuningFork-Oscillator/raw/main/media/Tonestromme.mp3)
-=======
 
+I forhold til de tonestrømme Poul la Cour beskriver i patentet, da kan de bølgeformer jeg har udtrukket ikke siges at vise noget tilsvarende. De firkant bølger der ses i fig. 2. b er intet sted at finde på mine bølger der istedet mere ligner en serie af clicks der sker hurtigt efter hinanden. Derudover havde jeg regnet med at se den positive og den negative bølger være unipolare, men de bølgeformer jeg ser er bipolare. Dette skyldes at jeg anvendte min hjemmebyggede betafield mikrofon der vha. et 100nH inductor komponent opfanger de to LED'er inductor komponentet sender det opfangede elektriske signal via et mono 3.5mm jack ind i mit lydkort, og tager således ikke højde for det positive eller negative polaritet af det elektriske signal. 
+![](./media/LaCourTonestrømme.png)
+For at kunne tilnærme mig et tilsvarende signal til det Poul la Cour illustrerer på Fig. 2,a,b,c i mit videre arbejde, må jeg erstatte mit simple LED kredsløb med en op-amp IC-chip.
 
- <audio id="audio" preload="auto" volume="0.5" data-loop-track="false" data-change-page-title="false"> 
- <source src="https://archive.org/download/samples2003-11-21.flac16/samples2003-11-21d2t04.mp3" /> 
-  
- 
- </audio> 
->>>>>>> 64cff37661fbc36e6967d08216951b372572eab4
+#### Elektromagnetens signal
+Idet man lyttede til LED'ernes blink krævede det at signalet blev forstærket gennem en pre-amp. Dette er dog ikke tilfældet hvis man ønsker at lytte til Elektromagneten, denne kan uden at blive forstærket fint høres gennem min hjemmebyggede betafield mikrofon.
+
+![](./media/elektromagnet_betasig.png)
+![](./media/elektromagnet_betasig_v2.png)
+![](./media/elektromagnet_betasig_v3.png)
+
+Idet elektromagneten tændes og slukkes med 440 Hz, høres denne som en tone. Tonens pitch starter lavt inden den finder sin rette svingning og holder så en nogenlunde konstant 440 Hz tone, med få pitch udsving. De samme udsving der høres af det elektromagnetisk omsatte audiosignal er de samme hastighedssvingninger der kan høres akustisk i rummet.
+
+Signalet fra elektromagneten er klart et puls signal og kan siges at have samme karakter som signalet afbilledet Fig. 2,a. For at kunne gøre dette signal mere brugbart med en mikrokontroller og arbejde med princippet om stemmegaflen som en form for clock lig en quartz crystal kunne man her arbejde med at sende signalet gennem en 555 IC-chip for at lave den signal til en fuldstændig uniolar firkant der kan sendes til en digital I/O port.
+
