@@ -235,3 +235,35 @@ Idet elektromagneten tændes og slukkes med 440 Hz, høres denne som en tone. To
 
 Signalet fra elektromagneten er klart et puls signal og kan siges at have samme karakter som signalet afbilledet Fig. 2,a. For at kunne gøre dette signal mere brugbart med en mikrokontroller og arbejde med princippet om stemmegaflen som en form for clock lig en quartz crystal kunne man her arbejde med at sende signalet gennem en 555 IC-chip for at lave den signal til en fuldstændig uniolar firkant der kan sendes til en digital I/O port.
 
+### Stemmegaffels op-amp Signal
+Som jeg gennem min analyse med sonic archaeology metoden hvori jeg anvendte betafield mikrofoner til at udtage stemmegaflens elektriske signal, konkluderede jeg at det var nødvendigt at anvende et Op-Amp kredsløb for at kunne se stemmegaffels signalets polaritet, idet dette ikke kunne ses af de bølger der blev optaget med betafield mikrofonen.
+
+<p align="center">
+	<img src="./media/TuneF_Op-Amp.jpg" width=70% />
+</p>
+
+Jeg erstattede således det simple AC LED kredsløb med en [Sparkfun Mono audio amplifier](https://www.sparkfun.com/tutorials/392) baseret på Texas Instruments TPA2005D1. Idet Sparkfun Op-Amp tager 5-2.5V har jeg behov for en "step-down- regulator" så de 12V AC kan konverteres til 10-5V AC for således ikke at destruere Op-Amp'en. Jeg indsætter således en [Step-down power regulator](https://3deksperten.dk/lm2596-dc-dc-voltage-regulator-step-down-and-step-up-module-360v-3v.html?gclid=CjwKCAjwur-SBhB6EiwA5sKtjmtnrVUXI85sXeLbHPo-qfrLPaMEiDcu6kVBF5FIQOn7RzZkJAUoxBoCNEoQAvD_BwE) i kredsløbet. Dernæst forbinder jeg Op-Amp'ens output til et 3.5mm jack output, samt tilføjer et 10K potentiometer for at kunne styrer gain på Op-Amp'en. Til Op-Amp'ens positive og negative input tilføjer jeg hhv. den positive og negative kontakt signal fra stemmegafflen.
+
+<p align="center">
+	<img src="./media/TuneF_setup_1.jpg" width=70% />
+</p>
+<p align="center">
+	<img src="./media/TuneF_setup_2.jpg" width=70% />
+</p>
+
+Jeg fører derpå et 3.5mm jack kabel fra Op-Amp kredsløbet til et input i mit lydkort forbundet til Ableton Live, hvorfra jeg kan optage og analysere de signaler der kommer ind.
+
+<p align="center">
+	<img src="./media/TuneF_setup_wave.jpg" width=70% />
+</p>
+
+Følgende er det Bipolare signal, unipolare negativ og unipolar positiv.
+
+![](./media/Bipolar_squarewave.png)
+![](./media/unipolar_negative.png)
+![](./media/unipolar_positive.png)
+
+Disse signaler er markant tættere på Poul la Cour's signaler fra Fig 2.
+ <p align="center">
+	<img src="./media/LaCourTonestrømme.png" width=70% />
+</p>
