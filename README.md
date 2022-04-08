@@ -254,7 +254,7 @@ Jeg erstattede således det simple AC LED kredsløb med en [Sparkfun Mono audio 
 Jeg fører derpå et 3.5mm jack kabel fra Op-Amp kredsløbet til et input i mit lydkort forbundet til Ableton Live, hvorfra jeg kan optage og analysere de signaler der kommer ind.
 
 <p align="center">
-	<img src="./media/TuneF_setup_wave.jpg" width=70% />
+	<img src="./media/TuneF_setup_Wave.jpg" width=70% />
 </p>
 
 Følgende er det Bipolare signal, unipolare negativ og unipolar positiv.
